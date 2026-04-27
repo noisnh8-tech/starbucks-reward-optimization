@@ -64,9 +64,10 @@ SQLite 기반으로 실행 가능하며 `sql/` 폴더에서 확인할 수 있습
 
 | 파일 | 내용 |
 |------|------|
-| `funnel_conversion.sql` | 퍼널 단계별 전환율 (Receive → View → Complete) |
-| `c_type_detection.sql` | C유형(우연완료) 식별 및 리워드 비용 집계 |
-| `segment_cost.sql` | 오퍼 타입별 리워드 비용 분석 |
+| `01_prepare_transcript.py` | value 컬럼 파싱 → SQL 분석용 테이블 생성 |
+| `02_funnel_conversion.sql` | 퍼널 단계별 전환율 (Receive → View → Complete) |
+| `03_c_type_detection.sql` | C유형(우연완료) 식별 및 리워드 비용 집계 |
+| `04_segment_cost.sql` | 오퍼 타입별 리워드 비용 분석 |
 
 ---
 
