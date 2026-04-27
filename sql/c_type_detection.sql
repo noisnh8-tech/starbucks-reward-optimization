@@ -1,5 +1,6 @@
 -- 오퍼 확인 안 하고 완료한 케이스 (C유형) 찾기
 -- view 기록 없이 complete된 경우 = 마케팅 기여 없는 리워드 지급
+-- 오퍼를 확인하지 않고 완료된 거래를 식별하여, 마케팅 기여 없이 지급된 리워드 비용을 분석한 쿼리
 
 WITH viewed AS (
   SELECT DISTINCT person, offer_id
