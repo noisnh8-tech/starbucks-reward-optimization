@@ -1,7 +1,9 @@
 """
 transcript_clean.csv 생성 스크립트
-원본 transcript.csv의 value 컬럼(딕셔너리 형태)에서
-offer_id와 amount를 분리해 SQL 분석용 테이블로 저장합니다.
+
+transcript 데이터의 value 컬럼이 딕셔너리 문자열 형태로 저장되어 있어,
+이를 파싱해 분석에 사용할 수 있는 구조로 정제했습니다.
+offer_id, amount, reward를 각각 분리해 SQL 쿼리에서 바로 쓸 수 있도록 만들었습니다.
 """
 
 import pandas as pd
