@@ -17,6 +17,9 @@ __pycache__/
 Thumbs.db
 *.png
 
+# DB 파일
+*.db
+
 # 로그
 logs/
 *.log
