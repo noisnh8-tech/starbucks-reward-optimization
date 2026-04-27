@@ -1,7 +1,4 @@
-
 # Starbucks Reward 비용 구조 개선 프레임워크
-
-> **End-to-End marketing cost optimization for reward systems using Net Lift**
 
 스타벅스 리워드 오퍼 데이터를 분석해 구조적 비용 낭비를 정량화하고,  
 Opt-in 전환 전략으로 $260,000 절감 구조를 도출한 마케팅 분석 프로젝트
@@ -101,7 +98,7 @@ Opt-in 전환 전략으로 $260,000 절감 구조를 도출한 마케팅 분석 
 ## 5. 폴더 구조
 
 ```
-starbucks-offer-optimization/
+starbucks-reward-optimization/
 ├── notebooks/
 │   ├── 01_data_preparation.ipynb
 │   ├── 02_funnel_analysis.ipynb
