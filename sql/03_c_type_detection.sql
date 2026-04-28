@@ -33,3 +33,4 @@ SELECT
 FROM classified
 GROUP BY completion_type;
 
+
