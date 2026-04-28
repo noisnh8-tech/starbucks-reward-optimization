@@ -32,3 +32,4 @@ SELECT
   ROUND(SUM(reward), 0) AS total_reward_cost
 FROM classified
 GROUP BY completion_type;
+

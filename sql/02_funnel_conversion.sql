@@ -15,3 +15,4 @@ SELECT
   ) AS complete_rate_pct
 FROM transcript
 WHERE event IN ('offer received', 'offer viewed', 'offer completed');
+
