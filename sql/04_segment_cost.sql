@@ -18,3 +18,4 @@ GROUP BY p.offer_type
 ORDER BY total_reward_cost DESC;
 
 
+
