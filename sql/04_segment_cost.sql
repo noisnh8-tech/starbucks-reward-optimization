@@ -16,3 +16,4 @@ JOIN portfolio p ON t.offer_id = p.offer_id
 WHERE t.event = 'offer completed'
 GROUP BY p.offer_type
 ORDER BY total_reward_cost DESC;
+
