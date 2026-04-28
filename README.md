@@ -58,20 +58,6 @@ Opt-in 전환 전략으로 $260,000 절감 구조를 도출한 마케팅 분석 
 
 > 순차 실행 시 전체 분석 재현 가능
 
-### SQL 쿼리
-
-Python 탐색 분석 후, 반복 모니터링이 필요한 핵심 지표를 SQL로 별도 정리.  
-SQLite 기반으로 실행 가능하며 `sql/` 폴더에서 확인 가능.
-
-| 파일 | 내용 |
-|------|------|
-| `01_prepare_transcript.py` | value 컬럼 파싱 → SQL 분석용 테이블 생성 |
-| `02_funnel_conversion.sql` | 퍼널 단계별 전환율 (Receive → View → Complete) |
-| `03_c_type_detection.sql` | C유형(우연완료) 식별 및 리워드 비용 집계 |
-| `04_segment_cost.sql` | 오퍼 타입별 리워드 비용 분석 |
-
----
-
 > ### ⚠️ 실행 안내 및 데이터 공지
 >
 > 1. **데이터 출처**
@@ -84,6 +70,18 @@ SQLite 기반으로 실행 가능하며 `sql/` 폴더에서 확인 가능.
 > 3. **실행 흐름**
 >    - `01_data_preparation.ipynb` 실행 → `prep_master_table.csv` 생성
 >    - 이후 노트북(02~05) 실행 가능
+
+### SQL 쿼리
+
+Python 탐색 분석 후, 반복 모니터링이 필요한 핵심 지표를 SQL로 별도 정리.  
+SQLite 기반으로 실행 가능하며 `sql/` 폴더에서 확인 가능.
+
+| 파일 | 내용 |
+|------|------|
+| `01_prepare_transcript.py` | value 컬럼 파싱 → SQL 분석용 테이블 생성 |
+| `02_funnel_conversion.sql` | 퍼널 단계별 전환율 (Receive → View → Complete) |
+| `03_c_type_detection.sql` | C유형(우연완료) 식별 및 리워드 비용 집계 |
+| `04_segment_cost.sql` | 오퍼 타입별 리워드 비용 분석 |
 
 ---
 
