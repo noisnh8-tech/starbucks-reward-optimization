@@ -1,5 +1,5 @@
--- 오퍼 받은 사람 중 실제로 확인하고 완료까지 간 비율이 얼마나 되는지 보려고 만든 쿼리
--- 각 단계별 건수 세고 비율 계산
+-- 오퍼를 받은 이후 확인과 완료까지 이어지는 흐름을 보고,
+-- 각 단계별 전환율을 확인하기 위한 퍼널 분석 쿼리
 
 SELECT
   COUNT(CASE WHEN event = 'offer received' THEN 1 END) AS received_count,

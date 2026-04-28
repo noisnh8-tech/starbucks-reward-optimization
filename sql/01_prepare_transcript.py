@@ -1,9 +1,6 @@
 """
-transcript_clean.csv 생성 스크립트
-
-transcript 데이터의 value 컬럼이 딕셔너리 문자열 형태로 저장되어 있어,
-이를 파싱해 분석에 쓸 수 있는 구조로 정제한 스크립트
-offer_id, amount, reward를 각각 분리해 SQL 쿼리에서 바로 쓸 수 있게 만듦
+transcript 데이터의 value 컬럼을 파싱해 SQL 분석 가능한 형태로 정제하는 스크립트.
+offer_id, amount, reward를 각각 분리해 transcript_clean.csv로 저장.
 """
 
 import pandas as pd
