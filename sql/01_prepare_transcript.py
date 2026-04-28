@@ -30,3 +30,4 @@ transcript_clean.to_csv('../data/processed/transcript_clean.csv', index=False)
 print(f"저장 완료: {len(transcript_clean)}행")
 print(transcript_clean.head())
 
+
