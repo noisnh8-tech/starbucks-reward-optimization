@@ -16,3 +16,4 @@ SELECT
 FROM transcript
 WHERE event IN ('offer received', 'offer viewed', 'offer completed');
 
+
