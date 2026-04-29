@@ -83,6 +83,28 @@ SQLite 기반으로 실행 가능하며 `sql/` 폴더에서 확인 가능.
 | `03_c_type_detection.sql` | C유형(우연완료) 식별 및 리워드 비용 집계 |
 | `04_segment_cost.sql` | 오퍼 타입별 리워드 비용 분석 |
 
+**SQL 실행 결과 요약**
+
+`02_funnel_conversion.sql` — 퍼널 전환율
+
+| received_count | viewed_count | completed_count | view_rate_pct | complete_rate_pct |
+|----------------|--------------|-----------------|---------------|-------------------|
+| 76,277 | 57,725 | 33,579 | 75.7% | 44.0% |
+
+`03_c_type_detection.sql` — C유형(우연완료) 식별
+
+| completion_type | count | total_reward_cost |
+|----------------|-------|-------------------|
+| C유형(우연완료) | 4,855 | 22,356 |
+| 정상완료 | 28,724 | 142,320 |
+
+`04_segment_cost.sql` — 오퍼 타입별 비용
+
+| offer_type | completed_count | total_reward_cost | avg_reward_per_offer | cost_share_pct |
+|------------|-----------------|-------------------|----------------------|----------------|
+| bogo | 15,669 | 113,440 | 7.2 | 68.9% |
+| discount | 17,910 | 51,236 | 2.9 | 31.1% |
+
 ---
 
 ## 4. 결과

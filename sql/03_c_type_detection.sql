@@ -32,5 +32,11 @@ SELECT
 FROM classified
 GROUP BY completion_type;
 
+-- 실행 결과:
+-- | completion_type  | count  | total_reward_cost |
+-- |-----------------|--------|-------------------|
+-- | C유형(우연완료)   | 4,855  | 22,356            |
+-- | 정상완료          | 28,724 | 142,320           |
+
 
 
