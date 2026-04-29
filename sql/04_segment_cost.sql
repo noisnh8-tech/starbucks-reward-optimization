@@ -16,6 +16,12 @@ WHERE t.event = 'offer completed'
 GROUP BY p.offer_type
 ORDER BY total_reward_cost DESC;
 
+-- 실행 결과:
+-- | offer_type | completed_count | total_reward_cost | avg_reward_per_offer | cost_share_pct |
+-- |------------|-----------------|-------------------|----------------------|----------------|
+-- | bogo       | 15,669          | 113,440           | 7.2                  | 68.9           |
+-- | discount   | 17,910          | 51,236            | 2.9                  | 31.1           |
+
 
 
 
