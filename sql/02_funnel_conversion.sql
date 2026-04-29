@@ -1,5 +1,4 @@
--- 오퍼를 받은 이후 확인과 완료까지 이어지는 흐름을 보고,
--- 각 단계별 전환율을 확인하기 위한 퍼널 분석 쿼리
+-- 퍼널 전환율: Receive → View → Complete 단계별 전환율 집계
 
 SELECT
   COUNT(CASE WHEN event = 'offer received' THEN 1 END) AS received_count,
