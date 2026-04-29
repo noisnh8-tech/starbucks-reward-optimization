@@ -1,5 +1,4 @@
--- 오퍼 타입(bogo / discount)별 완료 건수와 리워드 비용을 집계해
--- 비용 집중 구조를 확인하기 위한 쿼리
+-- 오퍼 타입별 비용: bogo / discount 완료 건수 및 리워드 비용 집계
 
 SELECT
   p.offer_type,
