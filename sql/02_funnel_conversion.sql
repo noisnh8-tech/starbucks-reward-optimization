@@ -16,5 +16,10 @@ SELECT
 FROM transcript
 WHERE event IN ('offer received', 'offer viewed', 'offer completed');
 
+-- 실행 결과:
+-- | received_count | viewed_count | completed_count | view_rate_pct | complete_rate_pct |
+-- |----------------|--------------|-----------------|---------------|-------------------|
+-- | 76,277         | 57,725       | 33,579          | 75.7          | 44.0              |
+
 
 
